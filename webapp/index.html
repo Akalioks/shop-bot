@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <title>Nordic Home</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <nav class="tabs" id="tabs">
+      <button data-view="shop" class="active">Shop</button>
+      <button data-view="orders">My orders</button>
+      <button data-view="admin" id="adminTab" hidden>Admin</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SHOP -->
+    <section id="view-shop" class="view">
+      <div class="search"><input id="search" type="search" placeholder="Search products" autocomplete="off"></div>
+      <div class="chips" id="chips"></div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <!-- CART & CHECKOUT -->
+    <section id="view-cart" class="view" hidden>
+      <h2>Your cart</h2>
+      <div id="cartLines"></div>
+      <h3>Delivery</h3>
+      <div class="options" id="deliveries"></div>
+      <h3>Contact</h3>
+      <form id="form" class="form" novalidate>
+        <label>Name<input name="name" autocomplete="name" maxlength="80" required></label>
+        <label>Phone<input name="phone" type="tel" autocomplete="tel" maxlength="32" placeholder="+372 …" required></label>
+        <label id="addressField">Address<input name="address" autocomplete="street-address" maxlength="200" placeholder="Street, house, city / parcel locker"></label>
+        <label>Comment <span class="hint">(optional)</span><input name="comment" maxlength="300"></label>
+      </form>
+      <h3>Payment</h3>
+      <div class="options" id="payments"></div>
+      <div class="totals" id="totals"></div>
+      <p class="error" id="error" hidden></p>
+    </section>
+
+    <!-- DONE -->
+    <section id="view-done" class="view center" hidden>
+      <div class="big">🎉</div>
+      <h2 id="doneTitle">Order placed!</h2>
+      <p class="hint" id="doneText">We've sent the details to your Telegram chat.</p>
+      <button class="btn" id="doneBack">Back to the shop</button>
+    </section>
+
+    <!-- ORDERS -->
+    <section id="view-orders" class="view" hidden>
+      <div id="ordersList"></div>
+    </section>
+
+    <!-- ADMIN -->
+    <section id="view-admin" class="view" hidden>
+      <p class="note" id="adminNote"></p>
+      <div id="adminList"></div>
+    </section>
+
+    <div class="state" id="state">Loading…</div>
+  </main>
+
+  <!-- product sheet -->
+  <div class="sheet" id="sheet" hidden>
+    <div class="sheet-backdrop" data-close></div>
+    <div class="sheet-card" id="sheetCard"></div>
+  </div>
+
+  <!-- fallback button for testing outside Telegram -->
+  <button class="fab" id="fab" hidden></button>
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

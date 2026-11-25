@@ -1,0 +1,44 @@
+{
+  "_comment": "Loaded into the database on first run. Prices are in cents (2490 = €24.90). After that, edit prices and stock in the Mini App's Admin tab.",
+  "categories": [
+    {"id": "textiles", "name": "Textiles"},
+    {"id": "kitchen", "name": "Kitchen"},
+    {"id": "lighting", "name": "Lighting"},
+    {"id": "decor", "name": "Decor"}
+  ],
+  "delivery": [
+    {"id": "courier", "name": "Courier, Estonia", "eta": "1–2 working days", "price": 490, "free_from": 5000},
+    {"id": "locker", "name": "Parcel locker", "eta": "1–2 working days", "price": 290, "free_from": 5000},
+    {"id": "pickup", "name": "Pickup · Telliskivi 60, Tallinn", "eta": "ready in 2 hours", "price": 0, "free_from": 0}
+  ],
+  "products": [
+    {"category": "textiles", "name": "Linen duvet cover", "emoji": "🛏️", "color": "#C9B79C", "price": 7900,
+     "description": "Stonewashed European linen, 150×200 cm. Softens with every wash."},
+    {"category": "textiles", "name": "Wool throw", "emoji": "🧣", "color": "#8E9AAF", "price": 6400,
+     "description": "Estonian sheep wool, 130×170 cm. Warm, breathable, naturally soil-resistant."},
+    {"category": "textiles", "name": "Waffle towel set", "emoji": "🧺", "color": "#B5C9C3", "price": 3200,
+     "description": "Two cotton waffle towels, 50×70 cm. Quick-drying and lightweight."},
+    {"category": "textiles", "name": "Linen cushion cover", "emoji": "🟫", "color": "#A68A64", "price": 2490,
+     "description": "50×50 cm with a hidden zip. Insert not included."},
+    {"category": "kitchen", "name": "Oak cutting board", "emoji": "🪵", "color": "#B08968", "price": 3900,
+     "description": "Solid oak, 40×25 cm, finished with food-safe oil."},
+    {"category": "kitchen", "name": "Stoneware mug", "emoji": "☕", "color": "#7F8C8D", "price": 1490,
+     "description": "Hand-glazed, 350 ml. Dishwasher and microwave safe."},
+    {"category": "kitchen", "name": "Ceramic plate set", "emoji": "🍽️", "color": "#D6CFC7", "price": 4800,
+     "description": "Four 26 cm dinner plates in matte sand glaze."},
+    {"category": "kitchen", "name": "Glass carafe", "emoji": "🫗", "color": "#A9CCE3", "price": 2200,
+     "description": "Borosilicate glass, 1 l, with a cork stopper."},
+    {"category": "lighting", "name": "Paper pendant lamp", "emoji": "🏮", "color": "#F5E6CA", "price": 8900,
+     "description": "Ø45 cm rice-paper shade with a 2 m textile cord. E27 bulb not included."},
+    {"category": "lighting", "name": "Ceramic table lamp", "emoji": "💡", "color": "#E8D5B7", "price": 11900,
+     "description": "Glazed ceramic base with a linen shade, 42 cm tall."},
+    {"category": "lighting", "name": "Beeswax candles ×6", "emoji": "🕯️", "color": "#F4D03F", "price": 1800,
+     "description": "Pure Estonian beeswax, about 6 hours of burn time each."},
+    {"category": "decor", "name": "Dried flower bouquet", "emoji": "💐", "color": "#D7BDE2", "price": 2900,
+     "description": "Hand-tied bunny tails, lavender and pampas, about 45 cm."},
+    {"category": "decor", "name": "Linen wall hanging", "emoji": "🖼️", "color": "#CDB4A0", "price": 5600,
+     "description": "Natural linen on an oak rod, 60×90 cm."},
+    {"category": "decor", "name": "Terracotta vase", "emoji": "🏺", "color": "#C0796B", "price": 3400,
+     "description": "Hand-thrown terracotta, 25 cm. Not watertight — for dried flowers.", "in_stock": false}
+  ]
+}
